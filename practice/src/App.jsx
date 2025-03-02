@@ -1,23 +1,14 @@
 import { useState } from 'react'
 import './App.css'
-import Button from './component/Button.jsx'
 import Card from './component/Card.jsx'
+
 function App() {
-    const [count,setcount]=useState(0);
-    function m()
-    {
-      setcount(count+1);
-    }
+  const [name,setname]=useState('');
   return (
     <div>
-      <Card>
-
-      </Card>
-      <Button increment={m}>
-        <h1>{count}
-          
-        </h1>
-      </Button>
+      <Card title='card1' name={name} setname={setname}></Card>
+      <Card title='card2' name={name} setname={setname}></Card>
+      <p>change in parent using chile:{name}</p>
     </div>
   )
 }
