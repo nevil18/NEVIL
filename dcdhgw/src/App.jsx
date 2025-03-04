@@ -1,16 +1,18 @@
-import { useState } from 'react'
+import { useEffect,useState } from 'react'
 import './App.css'
-import Card from './component/Card.jsx'
+import Time from './component/Time'
+import Resizewidth from './component/Resizewidth.jsx'
+import Multieffect from './component/Multieffect.jsx'
 
 function App() {
-  const [name,setname]=useState('');
   return (
     <div>
-      <Card title='card1' name={name} setname={setname}></Card>
-      <Card title='card2' name={name} setname={setname}></Card>
-      <p>change in parent using chile:{name}</p>
+      {/* <Time/> */}
+      {/* <Datafetcher/> */}
+      {/* <Resizewidth/> */}
+      <Multieffect/>
     </div>
   )
 }
 
-export default App
+export default App    
